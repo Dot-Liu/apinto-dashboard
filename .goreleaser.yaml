@@ -33,16 +33,16 @@ archives:
     wrap_in_directory: apinto-dashboard
     name_template: "{{ .ProjectName }}_{{ .Tag }}_{{ .Os }}_{{ .Arch }}"
     files:
-      - src: 'build/account.yml'
+      - src: 'builds/account.yml'
         dst: /
-      - src: 'build/config.yml'
+      - src: 'builds/config.yml'
         dst: /
-      - src: 'build/Dockerfile'
+      - src: 'builds/Dockerfile'
         dst: /
-      - src: 'build/static/*'
+      - src: 'builds/static/*'
         dst: /static
         strip_parent: true
-      - src: 'build/tpl/*'
+      - src: 'builds/tpl/*'
         dst: /tpl
         strip_parent: true
 release:
